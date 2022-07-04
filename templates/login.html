@@ -1,0 +1,16 @@
+{{ define "body" }}
+    <div class="text-center">
+        <form method="POST" class="m-2">
+            <div class="form-group my-1">
+                <input id="login" name="login" placeholder="login" autofocus>
+                <p class="form-field-err"></p>
+            </div>
+            <div class="form-group my-1">
+                <input id="password" name="password" type="password" placeholder="password">
+                <p class="form-field-err"></p>
+            </div>
+            <label id="unauthorized" class="text-center"/>
+            <button class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+{{ end }}

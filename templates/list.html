@@ -1,0 +1,18 @@
+{{ define "body"}}
+    <div class="text-center p-2">
+        <h2>Here is the list of movies</h2>
+        <table class="table table-bordered table-striped table-sm">
+            <thead>
+            <tr><th>Title</th><th>Description</th><th></th></tr>
+            </thead>
+            <tbody>
+            {{ range .Movies}}
+                <tr>
+                    <td> <a href="/movie/{{.Id}}">{{ .Name }}</a></td>
+                    <td>{{ .Description }}</td>
+                </tr>
+            {{ end }}
+            </tbody>
+        </table>
+    </div>
+{{ end }}
